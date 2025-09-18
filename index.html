@@ -5,41 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <style type="text/tailwindcss">
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center place-content-center lg:py-16">
+        <h2 class="mb-4 text-3xl font-medium text-gray-900 dark:text-white">Reliable, efficient delivery</h2>
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Powered by Technology</h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Our Artificial Intelligence powered tools use millions of project data points 
+    to ensure that your project is successful</p>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+    <div class="grid grid-cols place-content-center items-center md:grid-cols-3 gap-4 ">
+    
+    <div class="grid gap-4">
+    <!-- Card1 -->
+    <div class="max-w-sm p-6 h-fit bg-white border-t-6 border-cyan-500 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 text-left">
+    <a href="#">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Supervisor</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Monitors activity to identify project roadblocks</p>
+    <img src="/images/icon-supervisor.svg" class="w-15 h-15 text-gray-500 justify-self-end dark:text-gray-400 mb-3" alt="supervisor">
+    </div>
+    </div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <div class="grid gap-4 h-fit">
+    <!-- Card2 -->
+    <div class="max-w-sm p-6 h-fit bg-white border-t-6  border-red-500 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 text-left">
+    <a href="#">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Team Builder</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Scans our talent network to create the optimal team for your project</p>
+    <img src="/images/icon-team-builder.svg" class="w-15 h-15 text-gray-500 justify-self-end dark:text-gray-400 mb-3" alt="team-builder">
+    </div>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+    <!-- Card3 -->
+    <div class="max-w-sm p-6 h-fit bg-white border-t-6  border-orange-500 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 text-left">
+    <a href="#">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Karma</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Regularly evaluates our talent to ensure quality</p>
+    <img src="/images/icon-karma.svg" class="w-15 h-15 text-gray-500 justify-self-end dark:text-gray-400 mb-3" alt="karma">
+    </div>
+    </div>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+    <div class="grid gap-4">
+    <!-- Card4 -->
+    <div class="max-w-sm p-6 h-fit bg-white border-t-6  border-blue-500 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 text-left">
+    <a href="#">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Calculator</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Uses data from past projects to provide better delivery estimates</p>
+    <img src="/images/icon-calculator.svg" class="w-15 h-15 text-gray-500 justify-self-end dark:text-gray-400 mb-3" alt="karma">
+    </div>
+    </div>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+    </div>
 
-  
+    </div>
+</section>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Husna</a>.
     </p>
   </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </html>
